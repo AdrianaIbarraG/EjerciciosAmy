@@ -1,0 +1,42 @@
+.box{
+   display:table; /*Nos ayuda a controlar estructuras*/
+    width: 100px; /*Ancho*/
+    height: 100px; /*Largo*/
+    background-color: pink; 
+    color: white;
+}
+
+#one {
+    position:-webkit-sticky; /*static, relative, fixed, sticky, absolute*/
+    top: 250px;
+    left: 30px;
+    background-color: rgb(156, 14, 61);
+}
+
+#two {
+    position:-webkit-sticky; /*static, relative, fixed, sticky, absolute*/
+    top: 45px;
+    left: 45px;
+    background-color: palevioletred;
+}
+
+#three {
+    position:relative; /*static, relative, fixed, sticky, absolute*/
+    top: 5px;
+    left: 100px;
+    background-color: palevioletred;
+}
+
+#four {
+    position:relative; /*static, relative, fixed, sticky, absolute*/
+    top: 5px;
+    left: 100px;
+    background-color: rgb(156, 14, 61);
+}
+
+.texto1{
+    width: 600px;
+    height: 400px;
+    overflow:scroll; /*visible, auto, hidden, scroll*/
+    padding-left: 150px;
+}

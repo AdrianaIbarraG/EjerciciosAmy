@@ -1,0 +1,49 @@
+*{font-family: 'Gill Sans'; color: indigo;}
+/*el asterisco es un selector universal es decir tomará todos los elementos de la página*/
+
+h2{font-family: Helvetica; color:darkgreen;}
+/*solo selecciona la eitqueta que estamos indicando en el selector*/
+
+.card{background-color:mistyrose;} 
+/*un selector de tipo clase se manda a llamar con un punto seguido del nombre que le dimos*/
+
+/*Parte de section*/
+section{
+    width: 70%;
+    background-color:antiquewhite ;
+    float: left;
+    margin: 10px;
+}
+/*Parte del article*/
+article{
+    margin: 0.5em 3em 0em 0em;
+    padding: 0.5em 2em;
+    background-color: cadetblue;
+    border: 10px solid black;
+    /*top, right, bottom, left*/
+    /*margin: 5em 3em, en este caso el 1ro solo afectaría arriba y abajo y el segundo afectaría izquierda y derecha*/
+}
+
+aside{
+    width: 25%; 
+    float: left; /*sirve para indicar que queremos que se quedé en la parte izquierda*/
+    background-color: aliceblue;
+}
+
+
+footer{
+    background-color: darkgrey;
+    width: auto;
+    height: 60px;
+    text-align: center;
+    padding: 45px;
+    margin: 10px;
+    clear: both; /*sirve para garantizar que el footer se quedará en la parte de abajo*/
+
+}
+/*Pixeles (px) son medidas que no van a cambiar en el proyecto (son medidas absolutas)*/
+/*Medidas relativas: "em" se utiliza para hacer referencia a la fuente del navegador que viene por default*/
+/*Medidas relativas: "rem" se adapta a la fuente raíz del html*/
+/*Medidas flexibles: "vm" se calcula respecto al ancho del viewpoint ejemplo: 100 vw es igual al 100% de nuestra ventana completa*/
+/*Medidas flexibles: "vh" se calcula respecto a la altura del viewpoint*/
+/*Medidas flexibles: "vmin/vmax" se calculan respecto al ancho del viewpint*/

@@ -1,0 +1,21 @@
+/*Estilo para menú*/
+nav{
+    background-color: darkseagreen;
+    width: auto; /*sirve para especificar que el ancho se adapte al ancho de la página*/
+    height: 60px;
+    word-spacing: 35px;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Verdana;
+    font-size: 25px;
+} 
+a:hover{
+    background-color: pink;
+    border-radius: 20px;
+    padding: 15px;
+}
