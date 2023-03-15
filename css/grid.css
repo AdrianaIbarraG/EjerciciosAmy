@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100%; /*Aquí indica el mínimo de altura que queremos que tenga*/
+}
+
+html{height: 100%;} /*Indica que está permitido que los items del grid ocupen el 100% de la página*/
+
+.grid-container > *{/* >* idica que todos los elementos van a llevar ese estilo*/
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.header1{
+    grid-area: header1;
+    background-color: lightpink;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: lightcoral;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(252, 87, 115);
+}
+
+.main{
+    grid-area: main;
+    background-color: palevioletred;
+}
+
+.footer1{
+    grid-area: footer1;
+    background-color: rgb(177, 46, 90);
+}
+
+/*Teléfono*/
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header1"
+    "navbar"
+    "main"
+    "sidebar"
+    "footer1";
+}
+
+/*Tablet*/
+/* @media sirve para indicar el punto de quiebre*/
+@media(min-width:600px){
+    .grid-container{
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 100px;
+        grid-template-areas:
+        "header1 header1"
+        "navbar navbar"
+        "sidebar main"
+        "footer1 footer1";
+    }
+}
+
+/*Escritorio*/
+@media (min-width:900px){
+    .grid-container{
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 100px;
+        grid-template-areas:
+        "header1 header1 header1"
+        "navbar navbar navbar"
+        "main main sidebar"
+        "footer1 footer1 footer1";
+    }
+}
